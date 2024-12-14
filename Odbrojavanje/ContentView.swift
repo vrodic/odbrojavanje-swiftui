@@ -450,7 +450,7 @@ struct CountdownView: View {
             }
 
             Text("Countdown: \(timeRemaining)")
-                .font(.headline)
+                .font(.headline).frame(maxWidth: .infinity, alignment: .leading)
 
             HStack {
                 Text("Interval: \(vm.intervalMilliseconds/1000)s")
